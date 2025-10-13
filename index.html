@@ -1,13 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/root.scss">
+    <link rel="stylesheet" href="./src/assets/fonts.css" />
+    <link rel="stylesheet" href="./src/css/root.scss" />
     <title>vite</title>
   </head>
   <body>
-    hello
+    <header class="header">
+      <div class="header__top container">
+        <div class="header__logo">
+          <img
+            src="./src/assets/svg/logo.svg"
+            alt="Логотип сайта"
+            class="header__logo"
+            loading="lazy"
+          />
+        </div>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link"> Главная </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link"> Про гида </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link"> Программа тура </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link"> Стоимость </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link"> Блог </a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button">Консультация</button>
+      </div>
+      <article class="header__title container">
+        <h1 class="header__title-text">
+          Насладись прогулкой в горах с командой единомышленников
+        </h1>
+      </article>
+
+
+        <nav class="button_menu container">
+          <ul class="button_menu-list">
+            <li class="button_menu-item">
+              <button class="button__menu-link">
+                Локация для тура
+              </button>
+              <div class="button__menu-text">
+                выберите из списка
+              </div>
+            </li>
+            <li class="button_menu-item">
+              <button class="button__menu-link">
+                Дата похода
+              </button>
+              <div class="button__menu-text">
+                укажите диапазон
+              </div>
+            </li>
+            <li class="button_menu-item">
+              <button class="button__menu-link">
+                Участники
+              </button>
+              <div class="button__menu-text">
+                минимум 4 человека
+              </div>
+            </li>
+            <li class="button_menu-item">
+              <button class="button">
+                Локация для тура
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+
+    </header>
+    <main class="main"></main>
+    <footer class="footer"></footer>
   </body>
 </html>

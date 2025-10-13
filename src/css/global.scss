@@ -1,0 +1,16 @@
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 150px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: var(--color-dark-green);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: var(--color-white);
+  font-size: var(--font-size-m);
+  padding: 12px 24px;
+}
