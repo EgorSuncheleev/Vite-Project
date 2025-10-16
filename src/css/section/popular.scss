@@ -1,0 +1,42 @@
+
+.section__popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+    .popular__title-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+        .popular__subtitle {
+          font-size: var(--font-size-xl);
+          color: var(--color-yellow);
+        }
+
+        .popular__title {
+          color: var(--color-black);
+          font-size: var(--font-size-xxl);
+        }
+    }
+
+    .popular__main-container {
+      display: flex;
+      gap: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+  .section__popular {
+
+    .popular__main-container {
+      display: none;
+    }
+  }
+}

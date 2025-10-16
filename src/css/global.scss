@@ -5,6 +5,12 @@
   margin: 0 auto;
 }
 
+@media (max-width: 1400px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+
 .button {
   background-color: var(--color-dark-green);
   outline: none;
@@ -13,4 +19,22 @@
   color: var(--color-white);
   font-size: var(--font-size-m);
   padding: 12px 24px;
+}
+
+.button:hover {
+  transition: opacity 0.5s ease;
+  scale: 110%;
+}
+
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
 }

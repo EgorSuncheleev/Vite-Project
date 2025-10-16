@@ -1,0 +1,32 @@
+
+.section__pictire {
+  
+  .section__picture-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+    .picture__title-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+        .picture__subtitle {
+          font-size: var(--font-size-xl);
+          color: var(--color-yellow);
+        }
+
+        .picture__title {
+          font-size: var(--font-size-xxl);
+        }
+    }
+
+    .picture__grid {
+          
+    }
+}
+}

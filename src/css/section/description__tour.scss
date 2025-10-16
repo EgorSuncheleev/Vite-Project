@@ -1,0 +1,116 @@
+.descripshion__tour {
+  display: flex;
+  flex-direction: row;
+  gap: 250px;
+  padding-top: 100px;
+  padding-bottom: 226px;
+  align-items: center;
+
+  .picture__tour {
+    position: relative;
+
+    .picture__house {
+      position: absolute;
+      right: -130px;
+      bottom: -130px;
+    }
+  }
+
+  .right__description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: left;
+    align-items: left;
+
+    .right__description-subtitle {
+      color: var(--color-yellow);
+      font-size: var(--font-size-xl);
+    }
+
+    .right__description-title {
+      font-size: var(--font-size-xxl);
+      font-weight: 800;
+    }
+  }
+
+  .section__right-description {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .right__description-text {
+    font-size: var(--font-size-l);
+    line-height: 150%;
+  }
+
+  .button__right {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .descripshion__tour {
+    padding-bottom: 200px;
+    padding-top: 80px;
+  }
+
+  .right__description-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 990px) {
+  .descripshion__tour {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .picture__tour {
+      position: relative;
+      display: flex;
+      gap: 20px;
+
+      .picture__house {
+        position: relative;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .picture__tour {
+    .picture__mountain {
+      display: none;
+    }
+  }
+}
+
+.descripshion__tour {
+  .right__description-container {
+
+    .right__description-title {
+      font-size: var(--font-size-xl);
+    }
+    
+
+  }
+
+          .right__description-text  {
+      font-size: var(--font-size-s);
+    }
+
+}
+
+@media (max-width: 576px) {
+
+  .descripshion__tour {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}

@@ -1,0 +1,132 @@
+.section__blog {
+  background-color: #f3f5f4;
+
+  .section__blog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .blog__title-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      padding-top: 80px;
+      padding-bottom: 40px;
+
+      .blog__subtitle {
+        font-size: var(--font-size-xl);
+        color: var(--color-yellow);
+      }
+
+      .blog__title {
+        color: var(--color-black);
+        font-size: var(--font-size-xxl);
+      }
+    }
+  }
+
+  .blog__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .blog__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 560px;
+    background-color: var(--color-white);
+    padding: 16px;
+
+      .blog__card-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      
+
+      .blog__card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        
+
+          .blog__card-content-title {
+            font-size: var(--font-size-xl);
+          }
+
+      .blog__card-content-text {
+        font-size: var(--font-size-xs);
+      }
+      }
+    }
+
+    .blog__card-content-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+        .blog__card-content-footer-data {
+          color: var(--color-yellow);
+          font-size: var(--font-size-xs);
+        }
+
+        .blog__card-content-footer-link {
+          color: var(--color-dark-green);
+          font-size: var(--font-size-xs);
+          text-decoration: none;
+        }
+    }
+  }
+
+  .button__card {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .section__blog {
+
+    .blog__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .blog__card {
+      width: 100%;
+    }
+
+  }
+}
+
+@media (max-width: 990px) {
+
+  .section__blog {
+
+    .blog__card {
+
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .section__blog {
+
+    .blog__grid {
+
+      .card__display-none {
+        display: none;
+      }
+    }
+  }
+}
+

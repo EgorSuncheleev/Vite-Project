@@ -41,52 +41,373 @@
             </li>
           </ul>
         </nav>
-        <button class="button">Консультация</button>
+        <button class="button button__display-none">Консультация</button>
+
+        <div class="header__burger-menu">
+          <img
+            src="./src/assets/svg/burger-menu.png"
+            alt="бургер меню"
+            class="icon__burger"
+          />
+        </div>
       </div>
+
       <article class="header__title container">
         <h1 class="header__title-text">
           Насладись прогулкой в горах с командой единомышленников
         </h1>
       </article>
 
+      <div class="form__background">
+        <div class="form">
+          <form class="header__form">
+            <label class="header__form-label" for="location"
+              >Выберете из списка</label
+            >
+            <select
+              class="header__form-select"
+              name="location-select"
+              id="location"
+            >
+              <option value="">Локация для тура</option>
+              <option value="USA">США</option>
+              <option value="Russia">Россия</option>
+              <option value="Switzerland">Швейцария</option>
+            </select>
+          </form>
 
-        <nav class="button_menu container">
-          <ul class="button_menu-list">
-            <li class="button_menu-item">
-              <button class="button__menu-link">
-                Локация для тура
-              </button>
-              <div class="button__menu-text">
-                выберите из списка
-              </div>
-            </li>
-            <li class="button_menu-item">
-              <button class="button__menu-link">
-                Дата похода
-              </button>
-              <div class="button__menu-text">
-                укажите диапазон
-              </div>
-            </li>
-            <li class="button_menu-item">
-              <button class="button__menu-link">
-                Участники
-              </button>
-              <div class="button__menu-text">
-                минимум 4 человека
-              </div>
-            </li>
-            <li class="button_menu-item">
-              <button class="button">
-                Локация для тура
-              </button>
-            </li>
-          </ul>
-        </nav>
+          <form class="header__form">
+            <label for="location">Укажите диапозон</label>
+            <select
+              class="header__form-select"
+              name="location-select"
+              id="location"
+            >
+              <option value="">Дата похода</option>
+              <option value="USA">Скоро</option>
+              <option value="Russia">Завтра</option>
+              <option value="Switzerland">Не скоро</option>
+            </select>
+          </form>
 
+          <form class="header__form">
+            <label for="location">Минимум 4 человека</label>
+            <select
+              class="header__form-select"
+              name="location-select"
+              id="location"
+            >
+              <option value="">Участники</option>
+              <option value="USA">5</option>
+              <option value="Russia">6</option>
+              <option value="Switzerland">6+</option>
+            </select>
+          </form>
 
+          <button class="button__form">Найти программу</button>
+        </div>
+      </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <section class="descripshion__tour container">
+        <div class="picture__tour">
+          <img
+            src="./src/assets/img/mountain.png"
+            alt="Фотография горы"
+            class="picture__mountain"
+          />
+          <img
+            src="./src/assets/img/house.png"
+            alt="Фотография дома"
+            class="picture__house"
+          />
+        </div>
+
+        <div class="section__right-description">
+          <div class="right__description-container">
+            <p class="right__description-subtitle">о нашем походе</p>
+
+            <h3 class="right__description-title">
+              Исследуйте все горные массивы мира вместе с нами
+            </h3>
+          </div>
+
+          <div class="right__description-text">
+            Его корни уходят в один фрагмент классической латыни 45 года н.э.,
+            то есть более двух тысячелетий назад. Ричард МакКлинток, профессор
+            латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из
+            самых странных слов в Lorem Ipsum, "consectetur"и занялся его
+            поисками в классической латинской литературе.
+          </div>
+
+          <button class="button button__right">Программа тура</button>
+        </div>
+      </section>
+      <section class="section__offers">
+        <div class="offers__background container">
+          <div class="offers__left-container">
+            <div class="offers__left-top">
+              <p class="offers__left-subtitle">наше предложение</p>
+              <h3 class="offers__left-title">Лучшие программы для тебя</h3>
+            </div>
+            <p class="offers__left-text">
+              Его корни уходят в один фрагмент классической латыни 45 года н.э.,
+              то есть более двух тысячелетий назад. Ричард МакКлинток, профессор
+              латыни из колледжа.
+            </p>
+
+            <div class="offers__list">
+              <img
+                src="./src/assets/svg/Gidsvg.svg"
+                alt="Свгшка"
+                class="offers__list-img"
+              />
+              <div class="offers__list-text">
+                <h6 class="offers__list-title">Опытный гид</h6>
+                <p class="offers__list-description">
+                  Для современного мира базовый вектор развития предполагает
+                  независимые способы реализации соответствующих условий
+                  активизации.
+                </p>
+              </div>
+            </div>
+
+            <div class="offers__list">
+              <img
+                src="./src/assets/svg/Group 17.svg"
+                alt="Свгшка"
+                class="offers__list-img"
+              />
+              <div class="offers__list-text">
+                <h6 class="offers__list-title">Безопасный поход</h6>
+                <p class="offers__list-description">
+                  Для современного мира базовый вектор развития предполагает
+                  независимые способы реализации соответствующих условий
+                  активизации.
+                </p>
+              </div>
+            </div>
+
+            <div class="offers__list">
+              <img
+                src="./src/assets/svg/Group 18.svg"
+                alt="Свгшка"
+                class="offers__list-img"
+              />
+              <div class="offers__list-text">
+                <h6 class="offers__list-title">Лояльные цены</h6>
+                <p class="offers__list-description">
+                  Для современного мира базовый вектор развития предполагает
+                  независимые способы реализации соответствующих условий
+                  активизации.
+                </p>
+              </div>
+            </div>
+
+            <button class="button button__offers">Строимость программ</button>
+          </div>
+
+          <div class="offers__right-container">
+            <img
+              src="./src/assets/img/Rectangle 8.png"
+              alt="Красивая картинка"
+              class="offers__picture-right"
+            />
+            <img
+              src="./src/assets/img/Rectangle 9.png"
+              alt="Красивая картинка"
+              class="offers__picture-right"
+            />
+            <img
+              src="./src/assets/img/Rectangle 10.png"
+              alt="Красивая картинка"
+              class="offers__picture-right"
+            />
+            <img
+              src="./src/assets/img/Rectangle 11.png"
+              alt="Красивая картинка"
+              class="offers__picture-right"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section__popular">
+        <div class="popular__title-container">
+          <p class="popular__subtitle">по версии отдыхающих</p>
+          <h3 class="popular__title">Популярные направления</h3>
+        </div>
+        <div class="popular__main-container">
+          <img
+            src="./src/assets/img/popular_tour.png"
+            alt=""
+            class="popular__main-picture"
+          />
+          <img
+            src="./src/assets/img/popular_tour2.png"
+            alt=""
+            class="popular__main-picture"
+          />
+          <img
+            src="./src/assets/img/popular_tour3.png"
+            alt=""
+            class="popular__main-picture"
+          />
+        </div>
+        <button class="button">Рейтинг направлений</button>
+      </section>
+      <section class="section__blog">
+        <div class="section__blog-container container">
+          <div class="blog__title-container">
+            <p class="blog__subtitle">делимся впечатлениями</p>
+            <h3 class="blog__title">Блог о путешествиях</h3>
+          </div>
+
+          <div class="blog__grid">
+          <div class="blog__card">
+            <img
+              src="./src/assets/img/Italy.png"
+              alt="Картинка Италии"
+              class="blog__card-picture"
+            />
+
+            <div class="blog__card-flex">
+              <div class="blog__card-content">
+                <h4 class="blog__card-content-title">
+                  Красивая Италя, какая она в реальности?
+                </h4>
+
+                <p class="blog__card-content-text">
+                  Для современного мира базовый вектор развития предполагает
+                  независимые способы реализации соответствующих условий
+                  активизации.
+                </p>
+              </div>
+
+              <div class="blog__card-content-footer">
+                <p class="blog__card-content-footer-data">01/04/2023</p>
+
+                <a href="/" class="blog__card-content-footer-link">
+                  читать статью
+                </a>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="blog__card card__display-none">
+            <img
+              src="./src/assets/img/airplane.png"
+              alt="Картинка Самолета"
+              class="blog__card-picture"
+            />
+
+            <div class="blog__card-flex">
+              <div class="blog__card-content">
+                <h4 class="blog__card-content-title">
+                  Долой сомнения! Весь мир открыт для вас!
+                </h4>
+
+                <p class="blog__card-content-text">
+                  Для современного мира базовый вектор развития предполагает
+                  независимые способы реализации соответствующих условий
+                  активизации ... независимые способы реализации соответствующих
+                </p>
+              </div>
+
+              <div class="blog__card-content-footer">
+                <p class="blog__card-content-footer-data">01/04/2023</p>
+
+                <a href="/" class="blog__card-content-footer-link">
+                  читать статью
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__card card__display-none">
+            <img
+              src="./src/assets/img/street.png"
+              alt="Картинка улочки"
+              class="blog__card-picture"
+            />
+
+            <div class="blog__card-flex">
+              <div class="blog__card-content">
+                <h4 class="blog__card-content-title">
+                  Как подготовиться к путешествию в одиночку? 
+                </h4>
+
+                <p class="blog__card-content-text">
+                  Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.
+                </p>
+              </div>
+
+              <div class="blog__card-content-footer">
+                <p class="blog__card-content-footer-data">01/04/2023</p>
+
+                <a href="/" class="blog__card-content-footer-link">
+                  читать статью
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__card card__display-none">
+            <img
+              src="./src/assets/img/tadjmahal.png"
+              alt="Картинка Тадж-Махала"
+              class="blog__card-picture"
+            />
+
+            <div class="blog__card-flex">
+              <div class="blog__card-content">
+                <h4 class="blog__card-content-title">
+                  Индия ... летим?
+                </h4>
+
+                <p class="blog__card-content-text">
+                  Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.
+                </p>
+              </div>
+
+              <div class="blog__card-content-footer">
+                <p class="blog__card-content-footer-data">01/04/2023</p>
+
+                <a href="/" class="blog__card-content-footer-link">
+                  читать статью
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="button button__card">
+          Другие матераилы
+        </button>
+        </div>
+      </section>
+      <section class="section__pictire">
+        <div class="section__picture-container container">
+          <div class="picture__title-container">
+            <p class="picture__subtitle">Фото отчет</p>
+            <h3 class="picture__title">Делимся впечатлениями</h3>
+          </div>
+
+          <div class="picture__grid">
+            <img src="./src/assets/img/1.png" alt="Фотка" class="picture__grid-img">
+            <img src="./src/assets/img/2.png" alt="Фотка" class="picture__grid-img">
+            <img src="./src/assets/img/3.png" alt="Фотка" class="picture__grid-img">
+            <img src="./src/assets/img/4.png" alt="Фотка" class="picture__grid-img">
+            <img src="./src/assets/img/5.png" alt="Фотка" class="picture__grid-img">
+            <img src="./src/assets/img/6.png" alt="Фотка" class="picture__grid-img">
+          </div>
+
+          <button class="button button__picture">
+            Наш Pinterest
+          </button>
+        </div>
+      </section>
+    </main>
     <footer class="footer"></footer>
   </body>
 </html>
